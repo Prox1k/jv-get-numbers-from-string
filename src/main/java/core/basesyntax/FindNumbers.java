@@ -28,7 +28,8 @@ public class FindNumbers {
         }
         int[] res = new int[numOfDig];
         for (i = 0; i < text.length(); i++) {
-            if (Character.isDigit(text.charAt(i)) || text.charAt(i) == '-' && Character.isDigit(text.charAt(i + 1))) {
+            if (Character.isDigit(text.charAt(i))
+                    || text.charAt(i) == '-' && Character.isDigit(text.charAt(i + 1))) {
                 digits.append(text.charAt(i));
                 while (i + 1 < text.length() && Character.isDigit(text.charAt(i + 1))) {
                     i++;
